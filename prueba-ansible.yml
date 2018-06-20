@@ -5,6 +5,12 @@
   tasks:
     - name: ping
       ping:
+    - name: Docker-PY
+      pip:
+        name: "{{ item }}"
+      with_items:
+      - six==1.4
+      - docker-py==1.1.0
     - name: stop elasticsearch3
       docker:
         name: elasticsearch3

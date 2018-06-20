@@ -3,3 +3,7 @@
   tasks:
     - name: ping
       ping:
+    - name: stop elasticsearch3
+      docker:
+        name: elasticsearch3
+        state: stopped

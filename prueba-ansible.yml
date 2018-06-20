@@ -1,7 +1,5 @@
 ---
 - hosts: ubuntu
-  vars:
-    - ansible_sudo_pass: "babel2018"
   tasks:
     - name: ping
       ping:

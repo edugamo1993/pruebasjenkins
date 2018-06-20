@@ -24,4 +24,4 @@
       register: webpage
       until: "'green' in webpage.content"
       retries: 10
-      delay: 2
+      delay: 6

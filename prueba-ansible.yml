@@ -6,4 +6,5 @@
     - name: stop elasticsearch3
       docker:
         name: elasticsearch3
+        image: docker.elastic.co/elasticsearch/elasticsearch:6.3.0
         state: stopped

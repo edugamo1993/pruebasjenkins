@@ -13,10 +13,10 @@
       with_items:
       - { name: docker, version: 2.0.0 }
       - { name: docker-py, version: 1.10.6 }
-   # - name: stop elasticsearch3
-  #    docker_container:
-   #     name: elasticsearch3
-    #    state: stopped
+    - name: stop elasticsearch3
+      docker_container:
+        name: elasticsearch3
+        state: stopped
     - name: Check health
       uri:
         url: http://10.23.5.211:9200/_cat/health

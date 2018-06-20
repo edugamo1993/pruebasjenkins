@@ -25,6 +25,6 @@
     - name: Fail if green is not in the page content
       fail:
       #when: "'green' not in webpage.content"
-      until: "'green' not in webpage.content"
+      until: "'green' in webpage.content"
       retries: 10
       delay: 1

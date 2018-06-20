@@ -5,7 +5,7 @@
   tasks:
     - name: ping
       ping:
-    - name: install certain python modules for docker
+    - name: instalar docker-py y docker con pip.
       pip:
         name: "{{ item.name }}"
         version: "{{ item.version }}"

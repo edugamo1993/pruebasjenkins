@@ -27,4 +27,4 @@
       #when: "'green' not in webpage.content"
       until: "'green' in webpage.content"
       retries: 10
-      delay: 1
+      delay: 2

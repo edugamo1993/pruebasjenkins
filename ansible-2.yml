@@ -1,0 +1,9 @@
+---
+- hosts: ubuntu
+  tasks:
+    - name: ping
+      ping:
+    - name: "ps -ef"
+      shell: ps -ef
+      register: salida
+    - debug: msg="{{ salida.stdout }}"
